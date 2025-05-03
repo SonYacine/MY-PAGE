@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>ملفي الشخصي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+  <div class="top-footer">
+    <p>&copy; 2025جميع الحقوق و النشر محفوظة عندي و لكن هل تعلم أن الثالث سجله - <span class="highlight-name">كوندي </span></p>
+  </div>
+
+  <div class="music-control">
+    <button onclick="toggleMusic()" id="music-btn" title="تشغيل/إيقاف الموسيقى">
+      <i class="fas fa-pause" id="music-icon"></i>
+    </button>
+  </div>
+
+  <div class="instagram-button">
+    <a href="https://www.instagram.com/son_yacine?igsh=MWZnd3EzMDhtbm91" target="_blank" title="تابعني على إنستغرام">
+      <img src="ins.png" alt="إنستغرام" class="instagram-icon">
+    </a>
+  </div>
+
+  <audio id="background-music" autoplay loop>
+    <source src="background-music.mp3" type="audio/mp3" />
+    متصفحك لا يدعم تشغيل الصوت.
+  </audio>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Welcom to my <span>Word</span></h1>
+      <img src="your-profile-pic.png" alt="Your Profile Picture" class="profile-pic" />
+      <p>مطور واجهات أمامية ومحب للأنمي ✨</p>
+      <a href="#projects" class="btn">استعرض أعمالي</a>
+    </div>
+  </header>
+
+  <div class="image-popup" id="imagePopup">
+    <span class="close-btn" id="closePopup">&times;</span>
+    <img src="your-profile-pic.png" alt="Your Profile Picture" class="profile-pic">
+</div>
+
+<body>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#about">من أنا</a></li>
+      <li><a href="#projects">الأعمال</a></li>
+      <li><a href="#contact">تواصل معي</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2><span class="hiighlight-name">You have one life make sure to enjoy it and never give up</span></h2>
+      <div class="left-text">
+        <p><span class="highlight-name">WELCOME you may call me SON</span></p>
+        <p>I am a web designer and developer who loves attractive design and user experience.</p>
+        <p>I use HTML, CSS, and JavaScript to create fast and beautiful websites.</p>
+        <p>Just a small page for me to introduce you to who I am</p>
+        <p>Just a guy in his second year of computer science</p>
+        <p>I can develop anything I want</p>
+        <p>But what I love most is watching anime and video games, the taste is irresistible</p>
+        <p>Check out my gallery and you'll find out</p>
+        <p>By the way, the music works, just wait for it!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <h2>مشروع رقم 1 - معرض الصور</h2>
+      <button id="show-gallery-btn">My Collection Gallery</button>
+      <section id="image-gallery" class="gallery" style="display: none;">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="image1.jpg" alt="صورة 1" onclick="openPopup('image1.jpg')"></div>
+          <div class="gallery-item"><img src="image2.jpg" alt="صورة 2" onclick="openPopup('image2.jpg')"></div>
+          <div class="gallery-item"><img src="image3.jpg" alt="صورة 3" onclick="openPopup('image3.jpg')"></div>
+          <div class="gallery-item"><img src="image4.jpg" alt="صورة 4" onclick="openPopup('image4.jpg')"></div>
+          <div class="gallery-item"><img src="image5.jpg" alt="صورة 5" onclick="openPopup('image5.jpg')"></div>
+          <div class="gallery-item"><img src="image6.jpg" alt="صورة 6" onclick="openPopup('image6.jpg')"></div>
+          <div class="gallery-item"><img src="image7.jpg" alt="صورة 7" onclick="openPopup('image7.jpg')"></div>
+          <div class="gallery-item"><img src="image8.jpg" alt="صورة 8" onclick="openPopup('image8.jpg')"></div>
+          <div class="gallery-item"><img src="image9.jpg" alt="صورة 9" onclick="openPopup('image9.jpg')"></div>
+          <div class="gallery-item"><img src="image10.jpg" alt="صورة 10" onclick="openPopup('image10.jpg')"></div>
+          <div class="gallery-item"><img src="image11.jpg" alt="صورة 11" onclick="openPopup('image11.jpg')"></div>
+          <div class="gallery-item"><img src="image12.jpg" alt="صورة 12" onclick="openPopup('image12.jpg')"></div>
+          <div class="gallery-item"><img src="image13.jpg" alt="صورة 13" onclick="openPopup('image13.jpg')"></div>
+          <div class="gallery-item"><img src="image14.jpg" alt="صورة 14" onclick="openPopup('image14.jpg')"></div>
+          <div class="gallery-item"><img src="image15.jpg" alt="صورة 15" onclick="openPopup('image15.jpg')"></div>
+          <div class="gallery-item"><img src="image16.jpg" alt="صورة 16" onclick="openPopup('image16.jpg')"></div>
+          <div class="gallery-item"><img src="image17.jpg" alt="صورة 17" onclick="openPopup('image17.jpg')"></div>
+          <div class="gallery-item"><img src="image18.jpg" alt="صورة 18" onclick="openPopup('image18.jpg')"></div>
+          <div class="gallery-item"><img src="image19.jpg" alt="صورة 19" onclick="openPopup('image19.jpg')"></div>
+          <div class="gallery-item"><img src="image20.jpg" alt="صورة 20" onclick="openPopup('image20.jpg')"></div>
+          <div class="gallery-item"><img src="image21.jpg" alt="صورة 21" onclick="openPopup('image21.jpg')"></div>
+          <div class="gallery-item"><img src="image22.jpg" alt="صورة 22" onclick="openPopup('image22.jpg')"></div>
+          <div class="gallery-item"><img src="image23.jpg" alt="صورة 23" onclick="openPopup('image23.jpg')"></div>
+          <div class="gallery-item"><img src="image24.jpg" alt="صورة 24" onclick="openPopup('image24.jpg')"></div>
+          <div class="gallery-item"><img src="image25.png" alt="صورة 25" onclick="openPopup('image25.png')"></div>
+          <div class="gallery-item"><img src="image26.jpg" alt="صورة 26" onclick="openPopup('image26.jpg')"></div>
+          <div class="gallery-item"><img src="image27.jpg" alt="صورة 27" onclick="openPopup('image27.jpg')"></div>
+          <div class="gallery-item"><img src="image28.jpg" alt="صورة 28" onclick="openPopup('image28.jpg')"></div>
+          <div class="gallery-item"><img src="image29.png" alt="صورة 29" onclick="openPopup('image29.png')"></div>
+          <div class="gallery-item"><img src="image30.png" alt="صورة 30" onclick="openPopup('image30.png')"></div>
+          <div class="gallery-item"><img src="image31.png" alt="صورة 31" onclick="openPopup('image31.png')"></div>
+          <div class="gallery-item"><img src="image32.png" alt="صورة 32" onclick="openPopup('image32.png')"></div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <div id="image-popup" class="image-popup" style="display: none;">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <button class="prev-btn" onclick="showPrevImage()">&#10094;</button>
+    <img id="popup-image" src="" alt="صورة مكبرة">
+    <button class="next-btn" onclick="showNextImage()">&#10095;</button>
+  </div>
+
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>مشاريعي</h2>
+      <div class="project-grid">
+        <a href="https://sonyacine.github.io/KarKaboux2/" target="_blank" class="project-card">
+          <img src="project1.jpg" alt="مشروع 1" class="project-img">
+          <h3>بآلة حاسبة</h3>
+          <p>أنظر لترى ألة حاسبة عصرية و جميلة </p>
+        </a>
+        <a href="https://sonyacine.github.io/Payment-Page/" target="_blank" class="project-card">
+          <img src="project2.jpg" alt="مشروع 2" class="project-img">
+          <h3>صفحة الدفع </h3>
+          <p>صفحة الدفع الأجنبي  VISA.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2> If you wanna <span class="high12" > Contact</span> me </h2>
+      <p>راسلني عبر البريد: <a href="mailto:youremail@example.com">yacinecrbt@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; People : <span class="Gun" > The GUN </span> can kill a humen </p>
+    <div>
+      What is Killing me : 💃🏻🇹🇷
+    </div>
+  </footer>
+
+  <script>
+    const audio = document.getElementById('background-music');
+    const musicIcon = document.getElementById('music-icon');
+
+    function toggleMusic() {
+      if (audio.paused) {
+        audio.play();
+        musicIcon.classList.remove('fa-play');
+        musicIcon.classList.add('fa-pause');
+      } else {
+        audio.pause();
+        musicIcon.classList.remove('fa-pause');
+        musicIcon.classList.add('fa-play');
+      }
+    }
+
+    document.getElementById("show-gallery-btn").addEventListener("click", function () {
+      document.getElementById("image-gallery").style.display = "flex";
+    });
+
+    function openPopup(imageSrc) {
+      const popup = document.getElementById('image-popup');
+      const popupImage = document.getElementById('popup-image');
+      popup.style.display = 'flex';
+      popupImage.src = imageSrc;
+    }
+
+    function closePopup() {
+      const popup = document.getElementById('image-popup');
+      popup.style.display = 'none';
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
